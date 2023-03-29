@@ -3,7 +3,7 @@ input = " ";
 objects = [];
 function setup()
 {
-    canvas = createCanvas(500, 430);
+    canvas = createCanvas(480, 400);
     canvas.center();
 
     video = createCapture(VIDEO);
@@ -13,7 +13,7 @@ function setup()
 
 function draw()
 {
-    image(video, 0, 0, 500, 430);
+    image(video, 0, 0, 480, 400);
     if(status != "")
     {
         objectDetector.detect(video, gotResult);
